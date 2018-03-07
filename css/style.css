@@ -1,0 +1,203 @@
+body{
+ background: yellow;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.checkers{
+	position: absolute;
+	margin: auto;
+	width: 80vmin;
+	height: 80vmin;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border: 35px solid #fff;
+	background: #fff;
+}
+.checkers div{
+	position: absolute;
+}
+.checkers .check-top{
+	top: 0;
+	border-top:2px solid grey;
+	border-right: 2px solid grey;
+	border-left:2px solid grey;
+}
+.checkers .check-bottom{
+	bottom: 0;
+	border-bottom:2px solid grey;
+	border-right: 2px solid grey;
+	border-left:2px solid grey;
+}
+.checkers [class*="check-"]{
+	height: 50%;
+	left: 0;
+	right: 0;
+}
+.checkers [class*="check-"] .row:nth-child(1){
+	top: 0%;
+}
+.checkers [class*="check-"] .row:nth-child(2){
+	top: 25%;
+}
+.checkers [class*="check-"] .row:nth-child(3){
+	top: 50%;
+}
+.checkers [class*="check-"] .row:nth-child(4){
+	top: 75%;
+}
+.checkers [class*="check-"] .row{
+	height: 25%;
+	width: 100%;
+}
+.checkers [class*="check-"] .row:nth-child(odd) :nth-child(odd){
+	background: grey;
+}
+.checkers [class*="check-"] .row:nth-child(even) :nth-child(even){
+	background: grey;
+}
+.checkers [class*="check-"] .row > div:nth-child(1){
+	left: 0;
+}
+.checkers [class*="check-"] .row > div:nth-child(2){
+	left: 12.5%;
+}
+.checkers [class*="check-"] .row > div:nth-child(3){
+	left: 25%;
+}
+.checkers [class*="check-"] .row > div:nth-child(4){
+	left: 37.5%;
+}
+.checkers [class*="check-"] .row > div:nth-child(5){
+	left: 50%;
+}
+.checkers [class*="check-"] .row > div:nth-child(6){
+	left: 62.5%;
+}
+.checkers [class*="check-"] .row > div:nth-child(7){
+	left: 75%;
+}
+.checkers [class*="check-"] .row > div:nth-child(8){
+	left: 87.5%;
+}
+
+.checkers [class*="check-"] .row > div{
+	width: 12.5%;
+	height: 100%;
+}
+.checkers .check-top .row:nth-child(2n+1) :nth-child(odd):after, .checkers .check-top .row:nth-child(2) :nth-child(even):after{
+	display: block;
+	background: red;
+	box-shadow: 0 2px 0 0px black;
+}
+.checkers .check-bottom .row:nth-child(2n) :nth-child(even):after, .checkers .check-bottom .row:nth-child(3) :nth-child(odd):after{
+	display: block;
+	background: black;
+	box-shadow:0 2px 0 0px red ;
+}
+.checkers [class*="check-"] .row > div:after{
+	content: '' ;
+	position: absolute;
+	display: none;
+	margin: auto;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 75%;
+	height: 75%;
+	border-radius:50% ;
+	transition: all .4s;
+	}
+.checkers .check-bottom .row:nth-child(2n) :nth-child(even):hover:after, .checkers .check-bottom .row:nth-child(3) :nth-child(odd):hover:after{
+	transform: translateY(-15px) ;
+}
+.checkers .check-top .row:nth-child(2n+1) :nth-child(odd):hover:after, .checkers .check-top .row:nth-child(2) :nth-child(even):hover:after{
+	transform: translateY(-15px) ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
